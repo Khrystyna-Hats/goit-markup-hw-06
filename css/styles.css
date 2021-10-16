@@ -888,6 +888,10 @@ footer {
   border-color: var(--accent-color);
 }
 
+.checkbox-text:checked svg {
+  fill: var(--accent-color);
+}
+
 .accept-checkbox {
   display: flex;
   justify-content: center;
