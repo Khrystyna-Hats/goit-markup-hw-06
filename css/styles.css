@@ -499,14 +499,20 @@ footer {
   color: var(--accent-color);
 }
 
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-address {
   margin-right: 70px;
+  flex-grow: 1;
 }
 
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
 }
 
 .footer-join {
@@ -787,20 +793,16 @@ footer {
 
 .label-text {
   display: block;
-  margin-top: 10px;
   margin-bottom: 4px;
 }
 
 .input-label {
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--second-text-color);
   display: block;
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .input-wrapper {
@@ -816,6 +818,7 @@ footer {
 }
 
 .modal-comment {
+  display: block;
   width: 100%;
   resize: none;
   height: 120px;
@@ -823,7 +826,7 @@ footer {
   border-radius: 4px;
   background: transparent;
   margin-top: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 12px;
@@ -865,6 +868,9 @@ footer {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkbox-text-link {
@@ -880,12 +886,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .checkbox-text:checked + .checkbox-text span {
   background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  border: none;
 }
 
 .checkbox-text:checked svg {
